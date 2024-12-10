@@ -20,7 +20,6 @@
 body {
     font-family: "Be Vietnam Pro", sans-serif;
     color: hsl(--color-neutral-400);
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -77,6 +76,11 @@ button {
 }
 
 .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 30;
+    width: 100%;
     padding: 2.5rem 1.5rem
 }
 
@@ -183,26 +187,33 @@ button {
 
 .hero {
     padding-inline: 1.625rem;
+    overflow: hidden;
+}
+
+.hero__inner {
+    position: relative;
 }
 
 .hero .pill {
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(30%, -24%);
+    transform: translate(38%, -27.5%);
     z-index: -1;
 }
 
-@media only screen and (max-width: 991px) {
-    .hero {
-        max-width: 28rem;
-        margin-inline: auto;
-    }
-
+@media only screen and (max-width: 639px) {
     .hero .pill {
         --dim: 28.625rem;
         width: var(--dim);
         height: var(--dim);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .hero .container > * {
+        max-width: 40rem;
+        margin-inline: auto;
     }
 }
 
@@ -212,7 +223,7 @@ button {
 }
 
 .hero .container {
-    margin-block: 0.5rem 5.875rem;
+    padding-block: 6.875rem 5.75rem;
 }
 
 .hero .img-container img {
@@ -244,7 +255,7 @@ button {
 
 @media only screen and (min-width: 992px) {
     .hero .pill {
-        transform: translate(18%, -19%);
+        transform: translate(20%, -19%);
     }
 
     .hero .container {
@@ -253,7 +264,7 @@ button {
         align-items: center;
         justify-content: space-between;
         gap: 2rem;
-        margin-block: 3.375rem 6.375rem;
+        padding-block: 13.75rem 8.25rem;
     }
 
     .hero .img-container {

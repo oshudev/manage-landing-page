@@ -4,8 +4,10 @@ import pill from '@/assets/bg-tablet-pattern.svg';
 function Hero() {
   return (
     <section className="hero">
-      <div className="pill">
-        <img src={pill} alt="" />
+      <div className="hero__inner">
+        <div className="pill">
+          <img src={pill} alt="" />
+        </div>
       </div>
       <div className="container">
         <div className="img-container">
