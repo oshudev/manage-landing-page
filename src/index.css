@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+:root {
+    --color-red-pushpin-300: 12, 88%, 59%;
+    --color-red-pushpin-200: 9, 100%, 78%;
+    --color-red-pushpin-100: 13, 100%, 96%;
+    --color-neutral-500: 233, 12%, 13%;
+    --color-neutral-400: 228, 39%, 23%;
+    --color-neutral-300: 227, 12%, 61%;
+    --color-neutral-200: 0, 0%, 98%;
+    --color-neutral-100: 0, 0%, 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    color: hsl(--color-neutral-400);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    width: 8.625rem;
+    padding: 0.75rem;
+    font-size: calc(0.875rem - 1px);
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.54;
+    border-radius: 99rem;
+    transition: 300ms ease-in-out;
+}
+
+.button--primary {
+    color: hsl(var(--color-neutral-100));
+    background-color: hsl(var(--color-red-pushpin-300));
+}
+
+.button--primary:hover {
+    background-color: hsl(var(--color-red-pushpin-200));
+}
+
+.button--secondary {
+    color: hsl(var(--color-red-pushpin-300));
+    background-color: hsl(var(--color-neutral-100));
+}
+
+.button--secondary:hover {
+    color: hsl(var(--color-red-pushpin-200));
+}
+
+.container {
+    max-width: 69.375rem;
+    margin-inline: auto;
+}
+
+.header {
+    padding: 2.5rem 1.5rem
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: inline-block;
+}
+
+.header__logo img {
+    width: 6.875rem;
+    height: 1.125rem;
+    vertical-align: middle;
+}
+
+.header__hamburger {
+    position: relative;
+    z-index: 40;
+    display: block;
+}
+
+.header__menu-item--nav {
+    display: none;
+}
+
+.header__menu-item--nav .header-menu-link {
+    font-weight: 500;
+    font-size: calc(0.875rem - 1px);
+    line-height: 1.46;
+    color: hsl(var(--color-neutral-400));
+    transition: 300ms ease-in-out;
+}
+
+.header__menu-item--nav .header-menu-link:hover {
+    opacity: 0.5;
+}
+
+.header__menu-item--buttons .button {
+    display: none;
+}
+
+@media only screen and (min-width: 992px) { 
+    .header__logo img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header__hamburger {
+        display: none;
+    }
+
+    .header__menu-item--nav {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .header__menu-item--buttons .button {
+        display: block;
+    }
+}
+
+.nav-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    padding-inline: 1.5rem;
+    background-image: linear-gradient(hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.6));
+}
+
+.nav-modal[aria-hidden=false] {
+    display: block;
+} 
+
+.nav-modal__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 6.5rem;
+    max-width: 326px;
+    margin-inline: auto 2px;
+    padding: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.018125em;
+    color: hsl(var(--color-neutral-400));
+    background-color: hsl(var(--color-neutral-100));
+    border-radius: 0.25rem;
+}
+
+.nav-modal__container .nav-modal-link {
+    transition: 300ms;
+}
+
+.nav-modal__container .nav-modal-link:hover {
+    opacity: 0.5;
+}

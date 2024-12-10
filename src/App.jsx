@@ -1,5 +1,11 @@
+import Header from '@/sections/header';
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Header />
+    </>
+  );
 }
 
 export default App;
