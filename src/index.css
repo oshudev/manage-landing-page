@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;700&display=swap');
 
 :root {
     --color-red-pushpin-300: 12, 88%, 59%;
@@ -20,6 +20,7 @@
 body {
     font-family: "Be Vietnam Pro", sans-serif;
     color: hsl(--color-neutral-400);
+    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -178,4 +179,101 @@ button {
 
 .nav-modal__container .nav-modal-link:hover {
     opacity: 0.5;
+}
+
+.hero {
+    padding-inline: 1.625rem;
+}
+
+.hero .pill {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -24%);
+    z-index: -1;
+}
+
+@media only screen and (max-width: 991px) {
+    .hero {
+        max-width: 28rem;
+        margin-inline: auto;
+    }
+
+    .hero .pill {
+        --dim: 28.625rem;
+        width: var(--dim);
+        height: var(--dim);
+    }
+}
+
+.hero .pill img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.hero .container {
+    margin-block: 0.5rem 5.875rem;
+}
+
+.hero .img-container img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.hero .content-container {
+    text-align: center;
+}
+
+.hero .text-container {
+    margin-bottom: 1.875rem;
+    color: hsl(var(--color-neutral-400));
+}
+
+.hero .text-container h1 {
+    margin-bottom: 0.625rem;
+    font-size: 2.5rem;
+    line-height: 1.25;
+    letter-spacing: -0.0625em;
+}
+
+.hero .text-container p {
+    font-weight: 300;
+    line-height: 1.75rem;
+    opacity: 0.5025;
+}
+
+@media only screen and (min-width: 992px) {
+    .hero .pill {
+        transform: translate(18%, -19%);
+    }
+
+    .hero .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-block: 3.375rem 6.375rem;
+    }
+
+    .hero .img-container {
+        max-width: 36.25rem;    
+        margin-right: -1.25rem;
+    }
+
+    .hero .content-container {
+        flex: 1;
+        text-align: left;
+    }
+
+    .hero .text-container h1 {
+        margin-bottom: 1rem;
+        font-size: 3.5rem;
+        line-height: 1.14;
+    }
+
+    .hero .text-container p {
+        margin-bottom: 2.5rem;
+        max-width: 21.875rem;
+    }
 }
