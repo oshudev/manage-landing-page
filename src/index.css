@@ -295,6 +295,36 @@ ul, ol {
     }
 }
 
+
+.features {
+    position: relative;
+}
+
+.features::before {
+    --dim: 20.25rem;
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: -1;
+    width: var(--dim);
+    height: var(--dim);
+    background-image: url("/src/assets/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right -190px;
+}
+
+@media only screen and (min-width: 992px) {
+    .features::before {
+        --dim: 50.875rem;
+        left: -31.5rem;
+        bottom: -35.25rem;
+        right: unset;
+        background-position-x: right 0;
+    }
+}
+
 .features .text-container {
     margin-bottom: 3.375rem;
     padding-inline: 1.375rem;
