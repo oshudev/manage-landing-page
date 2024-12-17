@@ -520,6 +520,10 @@ ul, ol {
 }
 
 @media only screen and (min-width: 640px) {
+    .testimonials {
+        margin-block: 9.125rem 11.25rem;
+    }
+
     .testimonials h2 {
         font-size: 2.5rem;
         letter-spacing: -0.044375em;
