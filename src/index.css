@@ -783,7 +783,7 @@ ul, ol {
 
 @media only screen and (min-width: 992px) {
     .footer .contact-row {
-        grid-template-columns: 2fr 7fr 4fr;
+        grid-template-columns: 1fr 6fr 2fr;
         grid-template-areas: 
             "links nav newsletter"
             "links nav copyright";
@@ -796,13 +796,20 @@ ul, ol {
 
     .footer__newsletter {
         grid-area: newsletter;
-        margin-left: 0.75rem;
+    }
+
+    .footer__newsletter input {
+        width: 12.5rem;
+    }
+
+    .footer__newsletter .button {
+        width: 4rem;
     }
 
     .footer__nav {
         grid-area: nav;
         gap: 1.875rem;
-        margin-left: 7.875rem;
+        margin-inline: 7.875rem 10.75rem;
         padding-inline: 0;
     }
 
@@ -817,7 +824,12 @@ ul, ol {
         grid-area: links;
     }
 
+    .footer__logo {
+        width: 9.125rem;
+    }
+
     .footer__socials {
+        gap: 0.875rem;
         margin: 0;
         padding-inline: 0;
     }
