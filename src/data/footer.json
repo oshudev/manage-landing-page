@@ -1,0 +1,34 @@
+{
+    "primary": [
+        {
+            "label": "Pricing",
+            "link": "#"
+        },
+        {
+            "label": "Product",
+            "link": "#"
+        },
+        {
+            "label": "About Us",
+            "link": "#"
+        },
+        {
+            "label": "Community",
+            "link": "#"
+        }
+    ],
+    "secondary": [
+        {
+            "label": "Careers",
+            "link": "#"
+        },
+        {
+            "label": "Community",
+            "link": "#"
+        },
+        {
+            "label": "Privacy Policy",
+            "link": "#"
+        }
+    ]
+}
