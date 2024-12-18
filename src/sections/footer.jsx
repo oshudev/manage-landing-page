@@ -37,19 +37,39 @@ function Footer() {
           </div>
           <div className="footer__links">
             <div className="footer__socials">
-              <a href="#" className="footer-social-link">
+              <a
+                href="#"
+                className="footer-social-link"
+                aria-label="facebook link"
+              >
                 <FacebookIcon />
               </a>
-              <a href="#" className="footer-social-link">
+              <a
+                href="#"
+                className="footer-social-link"
+                aria-label="youtube link"
+              >
                 <YoutubeIcon />
               </a>
-              <a href="#" className="footer-social-link">
+              <a
+                href="#"
+                className="footer-social-link"
+                aria-label="twitter link"
+              >
                 <TwitterIcon />
               </a>
-              <a href="#" className="footer-social-link">
+              <a
+                href="#"
+                className="footer-social-link"
+                aria-label="pinterest link"
+              >
                 <PinterestIcon />
               </a>
-              <a href="#" className="footer-social-link">
+              <a
+                href="#"
+                className="footer-social-link"
+                aria-label="instagram link"
+              >
                 <InstagramIcon />
               </a>
             </div>
