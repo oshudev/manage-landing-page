@@ -312,7 +312,7 @@ ul, ol {
     background-image: url("/src/assets/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: right -190px;
+    background-position: top right -11.875rem;
 }
 
 @media only screen and (min-width: 992px) {
@@ -321,7 +321,7 @@ ul, ol {
         left: -31.5rem;
         bottom: -35.25rem;
         right: unset;
-        background-position-x: right 0;
+        background-position: top right 0;
     }
 }
 
